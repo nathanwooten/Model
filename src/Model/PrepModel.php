@@ -2,7 +2,7 @@
 
 namespace nathanwooten;
 
-class PrepModel
+class PrepModel extends Model
 {
 
 	public $modelName;
