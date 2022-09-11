@@ -5,10 +5,6 @@ namespace nathanwooten;
 use ArrayObject;
 use Exception;
 
-use nathanwooten\{
-  UriInterface
-};
-
 class Model extends ArrayObject
 {
 
@@ -16,11 +12,10 @@ class Model extends ArrayObject
 	public array $get = [];
 	public array $config = [];
 	public string $filepath;
-	public string $function = 'uri';
+	public string $function;
 	public $getSet = true;
 	public $nullValue = null;
-	public $property = 'uri';
-	public UriInterface $uri;
+	public $property;
 
 	public function __construct( array $config = null )
 	{
